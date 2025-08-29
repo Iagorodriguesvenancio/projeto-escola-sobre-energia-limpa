@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.image {
+    background: 
+        linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 100%),
+        url('https://i.pinimg.com/1200x/b4/34/7f/b4347fbfae378778943fa81d2b129663.jpg') center/cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+}
+.iniciar {
+    height: 100vh;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+.logoTitulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    height: 60px;
+    width: 60px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    margin-right: 20px;
+}
+section {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "logoTitulo logoTitulo"
+        "cards cards";
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tituloText{
+    grid-area: logoTitulo;
+    height: 500px;
+    width: 600px;
+    display: grid
+}
+
+
+.cards{
+    grid-area: cards;
+        
+}
+
