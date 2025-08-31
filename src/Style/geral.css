@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+}
+:root {
+    --neon-green: #39ff14;
+    --neon-blue: #00ffff;
+    --neon-roxo: #6b176b;
+    --neon-orange: #ff9500;
+    --dark-bg: #0a0a0a;
+    --dark-secondary: #1a1a2e;
+    --dark-accent: #16213e;
+}
