@@ -54,7 +54,7 @@ nav ul {
     margin: 0;
     padding: 0;
     font-size: 20px;
-    margin-right: 20px;
+    margin-right: 60px;
 }
 section {
     width: 100%;
@@ -73,10 +73,11 @@ section {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    
 }
 
 
-.card{
+.cards{
      height: 200px;
     width: 200px;
     display: flex;
@@ -86,3 +87,22 @@ section {
     gap: 60px;
 }
 
+.card{
+    height: 250px;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card.activi{
+    border: 3px solid #ffffff;
+    transform: translateY(-40px);
+    transition: 2s all;
+}
