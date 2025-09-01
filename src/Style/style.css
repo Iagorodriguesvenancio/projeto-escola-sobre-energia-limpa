@@ -6,7 +6,7 @@
 }
 .image {
     background: 
-        linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 100%),
+        linear-gradient(to top, rgba(175, 245, 83, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%),
         url('https://i.pinimg.com/1200x/b4/34/7f/b4347fbfae378778943fa81d2b129663.jpg') center/cover no-repeat;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,26 +58,31 @@ nav ul {
 }
 section {
     width: 100%;
-    display: grid;
-    grid-template-areas: 
-        "logoTitulo logoTitulo"
-        "cards cards";
+    display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
+    gap: 900px;
     
 }
 
 .tituloText{
-    grid-area: logoTitulo;
     height: 500px;
     width: 600px;
-    display: grid
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 
-.cards{
-    grid-area: cards;
-        
+.card{
+     height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
 }
 
