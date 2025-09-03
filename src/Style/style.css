@@ -6,7 +6,7 @@
 }
 .image {
     background: 
-        linear-gradient(to top, rgba(175, 245, 83, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%),
+        linear-gradient(to top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%),
         url('https://i.pinimg.com/1200x/b4/34/7f/b4347fbfae378778943fa81d2b129663.jpg') center/cover no-repeat;
     background-repeat: no-repeat;
     background-position: center;
@@ -18,7 +18,7 @@
     height: 100vh;
     width: 100%;
     border-radius: 10px;
-    margin-top: 20px;
+
 }
 
 header {
@@ -61,38 +61,43 @@ section {
     display: flex;
     height: 100%;
     align-items: center;
-    justify-content: center;
-    gap: 900px;
+    justify-content: space-between;
+  
     
 }
 
 .tituloText{
     height: 500px;
-    width: 600px;
+    width: 40%;
     font-size: 1.7rem;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
+    margin-left: 80px;
+    justify-content: center;
 }
 
 
 .cards{
-     height: 200px;
-    width: 200px;
+    height: 40%;
+    width: 35%;
+    margin-right: 80px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .card{
-    height: 250px;
-    width: 450px;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    position: absolute;
+    opacity: 0;
 }
 
 .card img{
@@ -103,6 +108,7 @@ section {
 
 .card.activi{
     border: 3px solid #ffffff;
-    transform: translateY(-40px);
     transition: 2s all;
+    z-index: 1;
+    opacity: 1;
 }
