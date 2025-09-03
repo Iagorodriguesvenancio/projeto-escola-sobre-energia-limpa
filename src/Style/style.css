@@ -89,7 +89,15 @@ section {
     flex-wrap: wrap;
     position: relative;
 }
-
+.cards h2{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 .card{
     height: 100%;
     width: 100%;
