@@ -1,0 +1,56 @@
+@media (max-width: 600px) {
+    .logoAndTitle img{
+        height: 52px;
+        width: 60px;
+    }
+    body {
+        font-size: 14px;
+    }
+    header {
+        font-size: 1rem;
+    }
+    .menu{
+        display: none;
+    }
+    .titulo{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .menuResponsivoButton{
+        display: block;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .titulo{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .titulo h1{
+        font-size: 2.2rem;
+    }
+    .logoAndTitle img{
+        height: 52px;
+        width: 60px;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 10px;
+        gap: 30px;
+    }
+    .footer-section {
+        min-width: unset;
+        margin: 15px 0;
+    }
+    .footer-section h3, .footer-section h4 {
+        margin-bottom: 6px;
+        font-size: 1.1rem;
+    }
+    .footer-bottom {
+        font-size: 13px;
+        padding-top: 8px;
+    }
+}
