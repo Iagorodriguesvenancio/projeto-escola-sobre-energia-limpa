@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/Style/geral.css" />
+    <link rel="stylesheet" href="assets/Style/style.css" />
+    <link rel="stylesheet" href="assets/Style/responsivoCelular.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/6331/6331491.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_upward"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=bedtime"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=contrast"
+    />
+    <title>High Voltage</title>
+  </head>
+
+  <body>
+    <p class="mensagem"></p>
+    <button class="btnScrollTop">
+      <a href="#index"
+        ><img
+          src="assets/Images/arrow_upward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          alt=""
+      /></a>
+    </button>
+    <div class="container" id="index">
+      <div class="geral">
+        <video autoplay muted id="video-bg" class="hidden">
+          <source
+            src="assets/video/vídeos-free---vista-aérea-energia-eólica-energia-limpa.mp4"
+            type="video/mp4"
+            class="hidden"
+          />
+        </video>
+        <div class="geralHeader hidden">
+          <header>
+            <div class="logoAndTitle">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/6331/6331491.png"
+                alt=""
+              />
+              <h1>High <span class="color">Voltage</span></h1>
+            </div>
+            <div class="menu">
+              <a href="https://www.ipea.gov.br/ods/ods7.html" target="_blank"
+                >Sobre</a
+              >
+              <a href="#contato">Contato</a>
+              <a href="#ExeplosEnergiaLimpa">Exemplos</a>
+              <button class="btnDarkMode"><span class="material-symbols-outlined"> contrast </span></button>
+              
+            </div>
+            <div class="menuResponsivoButton">
+              <img src="assets/Images/menu-aberto (2).png" alt="" />
+            </div>
+          </header>
+        </div>
+
+        <section class="hidden">
+          <div class="titulo hidden">
+            <h1>High <span class="color">Voltage</span></h1>
+          </div>
+          <div class="linhaText">
+            <hr class="hidden" />
+            <p class="text hidden">7. Energia Acessível e Limpa</p>
+          </div>
+        </section>
+      </div>
+      <div class="menuResponsivo">
+        <div class="buttonClose">
+          <img src="assets/Images/marca-cruzada.png" alt="" />
+        </div>
+        <a href="https://www.ipea.gov.br/ods/ods7.html">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="#ExeplosEnergiaLimpa">Exemplos</a>
+        <button class="btnDarkModeResponsivo"><span class="material-symbols-outlined"> contrast </span></button>
+      </div>
+      <div class="containerMain">
+        <div class="energiaLimpa">
+          <div class="title">
+            <h1>O que é energia limpa?</h1>
+          </div>
+          <div class="paragrafo">
+            <p>
+              Energia limpa é aquela produzida sem poluir o meio ambiente. Ela
+              vem de fontes que geram pouca ou nenhuma emissão de gases
+              poluentes, como o dióxido de carbono (CO₂), ajudando a combater o
+              aquecimento global.
+            </p>
+          </div>
+        </div>
+        <main class="swiper hidden c" id="ExeplosEnergiaLimpa">
+          <h2 class="title">Tipos de energia limpa</h2>
+          <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+              <li class="card-item swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qgqkkInwfr4Bkx_sL-aJzWth4lcd-CYowA&s"
+                    alt=""
+                    class="Card-Image"
+                  />
+                  <h2>Energia Solar</h2>
+                  <p>
+                    A energia solar é captada por painéis solares que convertem
+                    a luz do sol em eletricidade. É uma fonte de energia
+                    abundante e renovável, ideal para áreas ensolaradas.
+                  </p>
+                </div>
+              </li>
+              <li class="card-item swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://th.bing.com/th/id/R.013ebcc3db4544444770e320d505eed0?rik=eItCDem%2f4gFzOQ&pid=ImgRaw&r=0"
+                    alt=""
+                    class="Card-Image"
+                  />
+                  <h2>Energia Eólica</h2>
+                  <p>
+                    A energia eólica é gerada pelo vento, que movimenta as pás
+                    de turbinas eólicas para produzir eletricidade. É uma fonte
+                    limpa e eficiente, especialmente em regiões com ventos
+                    constantes.
+                  </p>
+                </div>
+              </li>
+              <li class="card-item swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.-EJIgXa3JeDpG76i2h7LtgHaFj?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt=""
+                    class="Card-Image"
+                  />
+                  <h2>Energia Hidrelétrica</h2>
+                  <p>
+                    A energia hidrelétrica é produzida pela força da água em
+                    movimento, geralmente em barragens. É uma fonte confiável e
+                    amplamente utilizada, mas pode ter impactos ambientais
+                    significativos.
+                  </p>
+                </div>
+              </li>
+              <li class="card-item swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROOwKtr4EhJUlgBb-zRFfJMSw7HtsgCfH1fQ&s"
+                    alt=""
+                    class="Card-Image"
+                  />
+                  <h2>Energia Geotérmica</h2>
+                  <p>
+                    A energia geotérmica aproveita o calor interno da Terra para
+                    gerar eletricidade ou aquecer edifícios. É uma fonte estável
+                    e sustentável, especialmente em áreas com atividade
+                    geológica.
+                  </p>
+                </div>
+              </li>
+              <li class="card-item swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/14ED/production/_123975350_gettyimages-1185889689.jpg.webp"
+                    alt=""
+                    class="Card-Image"
+                  />
+                  <h2>Energia nuclear</h2>
+                  <p>
+                    A energia nuclear, gerada pela fissão de núcleos atômicos, é
+                    uma fonte de baixa emissão de carbono. Contudo, ela levanta
+                    sérias preocupações quanto à segurança das usinas e ao
+                    armazenamento de resíduos radioativos.
+                  </p>
+                </div>
+              </li>
+              <li class="card-item swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://wmvalvulas.com.br/wp-content/uploads/2021/12/14-12wmreduzido.jpg"
+                    alt=""
+                    class="Card-Image"
+                  />
+                  <h2>Biocombustíveis</h2>
+                  <p>
+                    Os biocombustíveis são energias renováveis feitas de plantas
+                    e resíduos agrícolas. Eles reduzem a poluição, substituem
+                    combustíveis fósseis e ajudam o meio ambiente e a economia
+                    local.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </main>
+        <main class="mainCards hidden">
+          <h2>O que a energia limpa ajuda no mundo?</h2>
+          <div class="cards">
+            <article class="card- hidden">
+              <div class="icon">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/8541/8541903.png"
+                  alt=""
+                />
+              </div>
+              <div class="textTitli">
+                <h3>benefícios ambientais</h3>
+                <p>
+                  A principal vantagem é a redução da poluição. Fontes como a
+                  energia solar e eólica não emitem gases de efeito estufa, como
+                  o dióxido de carbono (CO 2 ​ ), que são os principais
+                  causadores do aquecimento global. Com menos poluição no ar, há
+                  uma melhora significativa na saúde pública, reduzindo doenças
+                  respiratórias e cardiovasculares. Além disso, ao usar fontes
+                  renováveis, preservamos os recursos naturais finitos, como o
+                  petróleo e o carvão, e protegemos ecossistemas frágeis que
+                  seriam afetados por sua extração.
+                </p>
+              </div>
+              <div class="btnSabiaMais">
+                <a
+                  href="https://123ecos.com.br/docs/sustentabilidade-ambiental/"
+                  target="_blank"
+                  ><button>Saiba mais</button></a
+                >
+              </div>
+            </article>
+            <article class="card- hidden">
+              <div class="icon">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2726/2726562.png"
+                  alt=""
+                />
+              </div>
+              <div class="textTitli">
+                <h3>Benefícios Sociais e Econômicos</h3>
+                <p>
+                  A transição para a energia limpa impulsiona a economia global.
+                  O setor de energias renováveis é um dos que mais cresce,
+                  gerando milhões de empregos em áreas de pesquisa, fabricação,
+                  instalação e manutenção. Além disso, a energia limpa promove a
+                  segurança energética, diminuindo a dependência de países que
+                  não produzem combustíveis fósseis. Ela também leva energia a
+                  comunidades remotas que não são atendidas por redes elétricas
+                  tradicionais, usando sistemas autônomos e descentralizados.
+                </p>
+              </div>
+              <div class="btnSabiaMais">
+                <a
+                  href="https://www.enelgreenpower.com/pt/learning-hub/transicao-energetica/beneficios-sustentabilidade"
+                  target="_blank"
+                  ><button>Saiba mais</button></a
+                >
+              </div>
+            </article>
+          </div>
+          
+          <div class="formulario">
+            <div class="form" id="contato">
+              <h2>Fale conosco</h2>
+              <input
+                type="text"
+                placeholder="Nome"
+                required
+                class="inputBox inNome"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                class="inputBox inEmail"
+              />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Mensagem"
+                required
+                class="Mensagem inMensagem"
+              ></textarea>
+              <button type="submit" class="btnEnviar" onclick="enviar()">Enviar</button>
+              <p class="mansagem"></p>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <footer class="hidden">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Energia Limpa</h3>
+            <p>
+              Solucionando o futuro com energia sustentável e limpa para
+              empresas e residências.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Contato</h4>
+            <p>Email: contato@energialimpa.com.br</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Endereço: Av. Sustentável, 1000 - São Paulo, SP</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/Javascript/scriptSwiper.js"></script>
+    <script src="assets/Javascript/scriptmenu.js"></script>
+    <script src="assets/Javascript/script.js"></script>
+    <script src="assets/Javascript/enviar.js"></script>
+  </body>
+</html>

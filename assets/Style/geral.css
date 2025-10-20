@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Montserrat", sans-serif;
+    
+}
+
+:root {
+    --white: #ffffff;
+    --black:#000;
+    --cinza:#ffffff41;
+    --verdeFraco:#c7ff60;
+    --verde:green;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.5; 
+}

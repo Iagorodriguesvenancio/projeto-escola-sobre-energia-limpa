@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+html{
+    scroll-behavior: smooth;  
+}
+.color {
+  color: rgb(77, 180, 77);
+}
+
+span {
+  font-family: "Cinzel", serif;
+}
+
+.geral{
+  background-color: #00000050;
+}
+
+header {
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: var(--white);
+}
+
+header .logoAndTitle h1 {
+  font-family: "Cinzel", serif;
+}
+
+.logoAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  margin-left: 60px;
+  max-width: 400px;
+}
+
+.logoAndTitle img {
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  gap: 60px;
+  margin-right: 60px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 1.4rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 87vh;
+  align-items: center;
+  font-weight: bold;
+}
+
+.linhaText {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  width: 50%;
+  border: 1px solid var(--white);
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 1.6rem;
+  color: var(--white);
+  margin-top: 20px;
+  font-family: "Cinzel", serif;
+}
+
+.titulo {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  gap: 20px;
+  font-size: 6rem;
+  color: var(--white);
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.titulo h1 {
+  font-size: 10.5rem;
+  font-family: "Cinzel", serif;
+}
+
+.menuResponsivoButton {
+  display: none;
+}
+.menuResponsivo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eef6b0;
+  padding: 30px;
+  border-radius: 10px 0 0 10px;
+  font-size: 1.2rem;
+  gap: 20px;
+  z-index: 999;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.4s cubic-bezier(0.77, 0, 0.18, 1), opacity 0.3s;
+}
+.menuResponsivo a {
+  color: var(--black);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menuResponsivo.active {
+  position: fixed;
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.4s cubic-bezier(0.77, 0, 0.18, 1), opacity 0.3s;
+  display: flex;
+}
+
+.buttonClose {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.containerMain {
+  background-color: #f2f2f2;
+}
+
+.containerMain.darkMode {
+  background-color: #121212;
+}
+
+.titleText .text{
+  font-size: 1.2rem;
+  color: #ffffff;
+  max-width:900px ;
+  text-align: center;
+  gap: 20px;
+}
+.swiper {
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 16px;
+}
+
+main .title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5rem;
+  color: #000;
+}
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto auto;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card {
+  height: 500px;
+  width: 100%;
+  user-select: none;
+  display: block;
+  background-color: #91ce4ab4;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.card-list .card-item .card h2 {
+  margin-bottom: 12px;
+}
+
+.card-list .card-item .Card-Image {
+  height: 60%;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.card-list .card-item .card p {
+  margin-bottom: 100px;
+}
+
+.mainCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3eb4899a;
+}
+
+.mainCards h2 {
+  margin: 60px 0;
+  font-size: 2.5rem;
+  color: black;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card- {
+  background-color: #adebb3;
+  padding: 20px;
+  border-radius: 10px;
+  width: 550px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+  height: 40%;
+  font-size: 1.4rem;
+  color: var(--black);
+}
+
+.card-:hover {
+  transform: translateY(-50px);
+  z-index: 1;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.432);
+}
+
+.card- .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card- img {
+  width: 40%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.card- h3 {
+  margin-bottom: 30px;
+  color: black;
+  display: flex;
+}
+
+.card- p {
+  margin-bottom: 50px;
+  color: black;
+}
+
+.card- p.darkMode {
+  color: black;
+}
+
+.btnSabiaMais {
+  height: 50%;
+}
+
+.btnSabiaMais button {
+  height: 50px;
+  width: 250px;
+  border: rgb(0, 0, 0) 4px solid;
+  background-color: transparent;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.btnSabiaMais a button:hover {
+  cursor: pointer;
+}
+
+.btnScrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 2;
+}
+
+.btnDarkMode,.btnDarkModeResponsivo{
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.btnDarkMode.active,.btnDarkModeResponsivo.active{
+  color: white;
+}
+ 
+body.darkMode{
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+.color.darkMode{
+  color: #723272
+}
+.card-list.card-item.card.darkMode{
+  background-color:darkgreen;
+}
+.card.darkMode{
+    background-color:darkgreen;
+}
+card-.darkMode {
+    background-color:darkgreen;
+}
+
+.desligar{
+    display: none;
+}
+
+text{
+  fill: #FFF;
+  font-size: 10px;
+}
+.icon-state{
+  fill: #bdc3c7;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+footer {
+  background: #222;
+  color: #fff;
+
+  font-size: 15px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+.footer-section a {
+  color: #4caf50;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transition: all 1s;
+  filter: blur();
+
+  transform: translateX(0);
+}
+
+.gearl :nth-child(1) {
+  transition-delay: 100ms;
+}
+.gearl :nth-child(2) {
+  transition-delay: 400ms;
+}
+.gearl :nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.gearl :nth-child(4) {
+  transition-delay: 600ms;
+}
+.cards :nth-child(1) {
+  transition-delay: 200ms;
+}
+.cards :nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 20px 0;
+  color: black;
+  width: 60%;
+}
+
+.formulario::placeholder {
+  color: #000;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.705);
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  gap: 30px;
+}
+
+.mensagem {
+  font-size: 1.8rem;
+}
+
+.inputBox {
+  height: 40px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: transparent;
+  border: #4caf50 2px solid;
+}
+
+.inputBox::placeholder , .Mensagem::placeholder {
+  color: #000;
+}
+
+.Mensagem {
+  height: 100px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: transparent;
+  border: #4caf50 2px solid;
+  resize: none;
+}
+
+.btnEnviar {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.btnScrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 2;
+}
+
+.btnDarkMode {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnDarkMode.active {
+  color: white;
+}
+p.darkMode{
+  color: white;
+}
+h2.darkMode{
+  color:white
+}
+body.darkMode {
+  background-color: black;
+  color: rgb(0, 0, 0);
+}
+.color.darkMode {
+  color: #723272;
+}
+.card-list.card-item.card.darkMode {
+  background-color: darkgreen;
+}
+.card.darkMode {
+  background-color: darkgreen;
+}
+card-.darkMode {
+  background-color: darkgreen;
+}
+
+.desligar {
+  display: none;
+}
+
+text {
+  fill: #fff;
+  font-size: 10px;
+}
+.icon-state {
+  fill: #bdc3c7;
+}
+
+.energiaLimpa {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.energiaLimpa .title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.energiaLimpa .title.darkMode {
+  color: #ffffff;
+}
+.energiaLimpa .paragrafo {
+  width: 50%;
+}
+
+  
+
+
+.energiaLimpa {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.energiaLimpa .title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.energiaLimpa .paragrafo {
+  width: 50%;
+}

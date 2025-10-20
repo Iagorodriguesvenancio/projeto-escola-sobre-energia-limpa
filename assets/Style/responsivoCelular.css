@@ -1,0 +1,208 @@
+@media (max-width: 1500px) {
+  .titulo h1 {
+    font-size: 9.5rem;
+  }
+  .titleText{
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .titulo h1 {
+    font-size: 7.5rem;
+  }
+  .card-list .card{
+    height: 600px;
+  }
+}
+
+@media (max-width:850px) {
+  .titulo h1 {
+    font-size: 9.5rem;
+  }
+  .titleText{
+    height: 100vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .titulo h1 {
+    font-size: 9rem;
+  }
+
+  .card- {
+
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+    height: 675px;
+  }
+
+  .menuResponsivoButton {
+    display: block;
+    margin-left: 40px;
+  }
+
+  .menu {
+    display: none;
+    position: fixed;
+  }
+
+  .card- {
+    font-size: 1.2rem;
+  }
+
+  .formulario {
+    width: 90%;
+  }
+
+  .btnSabiaMais {
+    height: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .logoAndTitle {
+    margin-left: 0;
+  }
+
+  .logoAndTitle img {
+    height: 52px;
+    width: 60px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    font-size: 1rem;
+  }
+
+  .menu {
+    display: none;
+    position: fixed;
+  }
+
+  .titulo {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .menuResponsivoButton {
+    display: block;
+  }
+
+  .tiulo .card- {
+    
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+    height: 550px;
+  }
+
+  .card- {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+    position: fixed;
+  }
+
+  .titulo {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .menuResponsivoButton {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .titulo {
+    width: 100%;
+    font-size: 7.2rem;
+  }
+
+  .titulo h1 {
+    font-size: 5rem;
+  }
+
+  .logoAndTitle img {
+    height: 52px;
+    width: 60px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    gap: 30px;
+  }
+
+  .footer-section {
+    min-width: unset;
+    margin: 15px 0;
+  }
+
+  .footer-section h3,
+  .footer-section h4 {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+    padding-top: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .card- {
+    font-size: 0.93rem;
+  }
+
+  .card-list .card {
+    height: 500px;
+    width: 100%;
+    user-select: none;
+    display: block;
+    background-color: var(--verdeFraco);
+    padding: 18px;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+  }
+
+  .card-list .card-item .Card-Image {
+    height: 30%;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .titulo {
+    width: 100%;
+    font-size: 2.2rem;
+  }
+}
+
+
+@media (max-width:325px) {
+  .logoAndTitle {
+    font-size: 0.6rem;
+  }
+
+  .titulo {
+    font-size: 0.5rem;
+  }
+}
